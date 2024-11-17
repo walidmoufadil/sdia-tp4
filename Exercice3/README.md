@@ -12,11 +12,14 @@ The `Main` class demonstrates the usage of `HashSet` in Java to perform set oper
 - `main(String[] args)` : The entry point of the program where the following operations are performed:
     1. Two sets of names (`group1` and `group2`) are initialized.
     2. The **intersection** of the two sets is calculated by finding common elements.
-    3. The **union** of the two sets is calculated by combining all unique elements from both sets.
+    3. A new set union is created by copying all elements from group1.
+       The addAll method is used to add elements from group2 to the union set, ensuring that no duplicates are included.
 
 ### Operations Performed
 1. **Intersection**: Finds and prints the common elements between `group1` and `group2`. This represents the intersection of the two sets.
-2. **Union**: Combines and prints all unique elements from both `group1` and `group2`. This represents the union of the two sets.
+2. **Union**: Combining two sets without duplicates using the addAll() method.
 
 ## Example Output
+
+***[](captures/Ex3-exe.png)***
 
