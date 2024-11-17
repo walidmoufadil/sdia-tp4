@@ -24,14 +24,12 @@ public class Main {
                 System.out.println(group);
         }
 
+
         System.out.println(" --------------------------- Union ------------------------ ");
 
-        for (String group : group1) {
-            System.out.println(group);
-        }
-        for (String group : group2) {
-            if(!group1.contains(group))
-                System.out.println(group);
-        }
+        Set<String> union = new HashSet<>(group1);
+        union.addAll(group2);
+        union.forEach(System.out::println);
+
     }
 }
